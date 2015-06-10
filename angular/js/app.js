@@ -1,26 +1,9 @@
 (function(){
-	var app = angular.module('store', [ ]);
+	var app = angular.module('onlinestore', ['store-products']);
 
-	app.controller('StoreController', function(){
-		this.products = gems;
+	app.controller('SomeController', [ '$http', ,'$log', function($http, $log)]{
+
 	});
-
-	var gems = [
-	{
-		name: 'Bacan',
-		price: 2.95,
-		description: '....',
-		canPurchase: true,
-		soldOut: false,
-	},
-	{
-		name: 'Bacan',
-		price: 2.95,
-		description: '....',
-		canPurchase: true,
-		soldOut: false,
-	},
-	];
 
 })();
 
